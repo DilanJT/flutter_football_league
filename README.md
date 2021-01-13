@@ -14,3 +14,12 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Functionalities of the app
+
+- add a football club
+- display stats of a specific club
+- display the premier league table
+- display matches
+- generate a random match
+
