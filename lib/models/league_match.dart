@@ -27,30 +27,35 @@ class LeagueMatch implements Comparable{
     _twoClubs = value;
   }
 
+  void setTwoClubs(FootballClub firstClub, FootballClub secClub){
+    this.twoClubs[0] = firstClub;
+    this.twoClubs[1] = secClub;
+  }
+
   @override
   int compareTo(other) {
     LeagueMatch leagueMatch = other;
-    if(this._matchDate.year == matchDate.year){
-      if(this._matchDate.month == matchDate.month){
-        if(this._matchDate.day == matchDate.day){
-          if(this._matchDate.hour == matchDate.hour){
+    if(this._matchDate.year == leagueMatch.matchDate.year){
+      if(this._matchDate.month == leagueMatch.matchDate.month){
+        if(this._matchDate.day == leagueMatch.matchDate.day){
+          if(this._matchDate.hour == leagueMatch.matchDate.hour){
             return 0;
-          }else if(this._matchDate.hour > matchDate.hour){
+          }else if(this._matchDate.hour > leagueMatch.matchDate.hour){
             return 1;
           }else {
             return -1;
           }
-        }else if(this._matchDate.day > matchDate.day){
+        }else if(this._matchDate.day > leagueMatch.matchDate.day){
           return 1;
         }else {
           return -1;
         }
-      }else if(this._matchDate.month > matchDate.month){
+      }else if(this._matchDate.month > leagueMatch.matchDate.month){
         return 1;
       }else {
         return -1;
       }
-    }else if(this._matchDate.year > matchDate.year){
+    }else if(this._matchDate.year > leagueMatch.matchDate.year){
       return 1;
     }else{
       return -1;
