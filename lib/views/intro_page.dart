@@ -4,6 +4,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:football_premier_league/views/home_page.dart';
+import 'package:football_premier_league/views/navigation.dart';
 
 class IntroPage extends StatefulWidget {
   static String id = "intro_page";
@@ -19,7 +20,7 @@ class _IntroPageState extends State<IntroPage> {
     super.initState();
     Timer(
       Duration(seconds: 3),
-        () => Navigator.pushNamed(context, HomePage.id)
+        () => Navigator.pushNamed(context, Navigation.id)
     );
   }
   @override

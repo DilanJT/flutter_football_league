@@ -9,6 +9,16 @@ class LeagueTable extends StatefulWidget {
 class _LeagueTableState extends State<LeagueTable> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Container(
+            child: Text(
+                "This is the club standing table"
+            ),
+          ),
+        ),
+      ),
+    );;
   }
 }

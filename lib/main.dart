@@ -5,6 +5,7 @@ import 'package:football_premier_league/views/home_page.dart';
 import 'package:football_premier_league/views/intro_page.dart';
 import 'package:football_premier_league/views/league_table.dart';
 import 'package:football_premier_league/views/matches_table.dart';
+import 'package:football_premier_league/views/navigation.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: IntroPage.id,
       routes: {
         IntroPage.id: (context) => IntroPage(),
+        Navigation.id: (context) => Navigation(),
         HomePage.id: (context) => HomePage(),
         AddFootballClub.id: (context) => AddFootballClub(),
         FootballClubInfo.id: (context) => FootballClubInfo(),

@@ -9,6 +9,16 @@ class MatchesTable extends StatefulWidget {
 class _MatchesTableState extends State<MatchesTable> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Container(
+            child: Text(
+                "all the played matches are displayed"
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
